@@ -10,8 +10,41 @@ import UIKit
 
 class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    
     var imagePicker = UIImagePickerController()
 
+    @IBOutlet weak var btncaptionText: UITextField!
+    
+    @IBOutlet weak var newImageView: UIImageView!
+    
+    @IBAction func btnSavePhoto(_ sender: Any) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext{
+            let photoSave = Photos(entity: Photos.entity(), insertInto: context)
+            
+            photoSave.caption = btncaptionText.text
+            
+            
+            if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+                
+                let photoSave = Photos(entity: Photos.entity(), insertInto: context)
+                
+                photoSave.caption = btncaptionText.text
+                
+                if let userImage = newImageView.image {
+                    
+                    if let userImageData = userImage.pngData() {
+                        photoSave.photo = userImageData
+                    }
+                }
+                (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+                
+            }
+            (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+            
+            navigationController?.popViewController(animated: true)
+        }
+    
+    }
     @IBAction func btnCamera(_ sender: Any) {
         imagePicker.sourceType = .camera
         present(imagePicker, animated: true, completion: nil)
@@ -45,6 +78,8 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
         
         imagePicker.dismiss(animated: true, completion: nil)
     }
+    
+    
     
     
     /*
