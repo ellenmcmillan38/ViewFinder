@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		187E779B22DE2A8C00C713C5 /* PhotoTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E779A22DE2A8C00C713C5 /* PhotoTableTableViewController.swift */; };
+		187E779D22DE69D300C713C5 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E779C22DE69D300C713C5 /* PhotoDetailViewController.swift */; };
 		1891E51522DD1A3D00519031 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891E51422DD1A3D00519031 /* AppDelegate.swift */; };
 		1891E51A22DD1A3D00519031 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1891E51822DD1A3D00519031 /* Main.storyboard */; };
 		1891E51D22DD1A3D00519031 /* ViewFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1891E51B22DD1A3D00519031 /* ViewFinder.xcdatamodeld */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		187E779A22DE2A8C00C713C5 /* PhotoTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableTableViewController.swift; sourceTree = "<group>"; };
+		187E779C22DE69D300C713C5 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		1891E51122DD1A3D00519031 /* ViewFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1891E51422DD1A3D00519031 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1891E51922DD1A3D00519031 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				1891E52022DD1A3F00519031 /* LaunchScreen.storyboard */,
 				1891E52322DD1A3F00519031 /* Info.plist */,
 				1891E51B22DD1A3D00519031 /* ViewFinder.xcdatamodeld */,
+				187E779C22DE69D300C713C5 /* PhotoDetailViewController.swift */,
 			);
 			path = ViewFinder;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				1891E51D22DD1A3D00519031 /* ViewFinder.xcdatamodeld in Sources */,
 				1891E54B22DD2DB800519031 /* AddPhotoViewController.swift in Sources */,
 				1891E51522DD1A3D00519031 /* AppDelegate.swift in Sources */,
+				187E779D22DE69D300C713C5 /* PhotoDetailViewController.swift in Sources */,
 				187E779B22DE2A8C00C713C5 /* PhotoTableTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

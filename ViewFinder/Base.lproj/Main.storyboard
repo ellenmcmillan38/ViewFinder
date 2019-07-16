@@ -40,10 +40,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="TWH-mY-i2l" kind="show" identifier="detailSegue" id="ISr-cV-B55"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YKM-Sf-FRu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="81" y="-30"/>
+            <point key="canvasLocation" x="80" y="-56"/>
         </scene>
         <!--Add New Photo-->
         <scene sceneID="fBQ-hD-2U9">
@@ -114,6 +117,31 @@
             </objects>
             <point key="canvasLocation" x="1041" y="-30"/>
         </scene>
+        <!--Image-->
+        <scene sceneID="SPo-9R-Fef">
+            <objects>
+                <viewController id="TWH-mY-i2l" customClass="PhotoDetailViewController" customModule="ViewFinder" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ywq-5e-7F1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oB2-SV-Y0y">
+                                <rect key="frame" x="87" y="260" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ges-C3-DBh"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Image" id="VjB-Gs-2d3"/>
+                    <connections>
+                        <outlet property="imageView" destination="oB2-SV-Y0y" id="z4y-hQ-IIK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3h6-KC-ZBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80" y="794"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="EpE-6S-RA9">
             <objects>
@@ -135,6 +163,6 @@
         <image name="images" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="X00-sa-LlX"/>
+        <segue reference="ozk-uU-Pc6"/>
     </inferredMetricsTieBreakers>
 </document>
